@@ -94,24 +94,28 @@ int main(){
                 atual = fila_vermelha.front();
                 fila_vermelha.pop();
                 atendidos_vermelha++;
+                qtd_vermelha--;
                 temPaciente = true;
 
             } else if (!fila_amarelo.empty()) {
                 atual = fila_amarelo.front();
                 fila_amarelo.pop();
                 atendidos_amarelo++;
+                qtd_amarelo--;
                 temPaciente = true;
 
             } else if (!fila_verde.empty()) {
                 atual = fila_verde.front();
                 fila_verde.pop();
                 atendidos_verde++;
+                qtd_verde--;
                 temPaciente = true;
 
             } else if (!fila_branco.empty()) {
                 atual = fila_branco.front();
                 fila_branco.pop();
                 atendidos_branco++;
+                qtd_branco--;
                 temPaciente = true;
             }
 
